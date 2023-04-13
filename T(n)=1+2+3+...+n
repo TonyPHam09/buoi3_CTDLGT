@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+  int n;
+  float p = 1;
+  do
+  {
+     printf("\nnhap n: ");
+     scanf("%d", &n);
+     if(n < 1)
+     {
+        printf("\nn phai >=1");
+     }
+  }while(n < 1);
+  for(int i = 1; i <= n; i++){
+    p = p * i;
+  }
+  printf("\nT(%d) = 1 x 2 x ... x %d = %f",n ,n, p);
+}
