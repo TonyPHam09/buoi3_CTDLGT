@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+void nhap(float a[], int &n) {
+	n = 0;
+	float y;
+	do {
+        printf("a[%d]: ", n);
+		scanf("%f", &y);
+		if (y != 0)
+			a[n++] = y;
+	} while(y != 0);
+}
+
+void xuat(float a[], int n){
+    for(int i=0; i<n; i++){
+        printf("%5f", a[i]);
+    }
+}
+
+float sumOfArray(float a[], int n) {
+    if (n == 0){
+       return 0; 
+    }
+    return sumOfArray(a, n - 1) + a[n-1];
+}
+
+int main() {
+    int n;
+    float a[10];
+    nhap(a,n);
+    xuat(a,n);
+    float tong = sumOfArray(a,n);
+    printf("\n tong: %f", tong);
+    return 0;
+}
