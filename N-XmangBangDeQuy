@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+    int n;
+    int a[50];
+    printf("nhap phan tu: ");
+    scanf("%d", &n);
+    for(int i=0; i<n; i++){
+        printf("a[%d] ",i);
+        scanf("%d",&a[i]);
+    }
+    for(int i=0; i<n; i++){
+        printf("%5d",a[i]);
+    }
+}
