@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void tangmang(int a[] , int n) {
+void swap(int a[] , int n) {
     int tang;
     for(int i = 0; i < n - 1; i++){
         for(int j = i + 1; j < n; j++){
@@ -24,7 +24,7 @@ void xuatmang(int a[], int n)
 int main() {
     int a[] = {3,4,1,8,2};
     int n = sizeof(a) / sizeof(a[0]);
-    tangmang(a,n);
+    swap(a,n);
     printf("ket qua: ");
     xuatmang(a,n);
 }
