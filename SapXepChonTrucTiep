@@ -20,7 +20,7 @@ void selectionSort(int a[], int n)
     }
 }
 
-void xuatmang(int a[], int n)
+void xuat(int a[], int n)
 {
     int i;
     for (i=0; i < n; i++)
@@ -33,6 +33,6 @@ int main()
     int n = sizeof(a)/sizeof(a[0]);
     selectionSort(a, n);
     printf("Sorted array: ");
-    xuatmang(a, n);
+    xuat(a, n);
     return 0;
 }
